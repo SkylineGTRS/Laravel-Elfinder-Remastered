@@ -1,14 +1,11 @@
 ## elFinder Package for Laravel 5
 
-### For Laravel 4, please use the [0.2 branch](https://github.com/barryvdh/laravel-elfinder/tree/0.2)!
-
-[![Packagist License](https://poser.pugx.org/barryvdh/laravel-elfinder/license.png)](http://choosealicense.com/licenses/mit/)
-[![Latest Stable Version](https://poser.pugx.org/barryvdh/laravel-elfinder/version.png)](https://packagist.org/packages/barryvdh/laravel-elfinder)
-[![Total Downloads](https://poser.pugx.org/barryvdh/laravel-elfinder/d/total.png)](https://packagist.org/packages/barryvdh/laravel-elfinder)
+[![Packagist License](https://poser.pugx.org/skylinegtrs/laravel-elfinder/license.png)](http://choosealicense.com/licenses/mit/)
+[![Latest Stable Version](https://poser.pugx.org/skylinegtrs/laravel-elfinder/version.png)](https://packagist.org/packages/skylinegtrs/laravel-elfinder)
+[![Total Downloads](https://poser.pugx.org/Laravel-Elfinder-Remastered/laravel-elfinder/d/total.png)](https://packagist.org/packages/Laravel-Elfinder-Remastered/laravel-elfinder)
 
 This packages integrates [elFinder 2.1](https://github.com/Studio-42/elFinder/tree/2.1), 
 by making the php files available with Composer (+autoloading) and the assets with a publish command. It also provides some example views for standalone, tinymce and ckeditor.
-Files are updated from the a seperate [build repository](https://github.com/barryvdh/elfinder-builds)
 
 > Note: Use `php artisan elfinder:publish` instead of the old publish command, for future changes!
 
@@ -16,12 +13,12 @@ Files are updated from the a seperate [build repository](https://github.com/barr
 
 Require this package with Composer
     
-    composer require barryvdh/laravel-elfinder
+    composer require skylinegtrs/laravel-elfinder
     
 Add the ServiceProvider to the providers array in app/config/app.php
 
 ```php
-Barryvdh\Elfinder\ElfinderServiceProvider::class
+Skyline\Elfinder\ElfinderServiceProvider::class
 ```
 
 You need to copy the assets to the public folder, using the following artisan command:
@@ -37,7 +34,7 @@ You can change the prefix or filter/middleware for the routes. If you want full 
 
 The default configuration requires a directory called 'files' in the public folder. You can change this by publishing the config file.
 
-    php artisan vendor:publish --provider='Barryvdh\Elfinder\ElfinderServiceProvider' --tag=config
+    php artisan vendor:publish --provider='Skyline\Elfinder\ElfinderServiceProvider' --tag=config
 
 In your config/elfinder.php, you can change the default folder, the access callback or define your own roots.
 
@@ -45,7 +42,7 @@ In your config/elfinder.php, you can change the default folder, the access callb
 
 You can override the default views by copying the resources/views folder. You can also do that with the `vendor:publish` command:
 
-    php artisan vendor:publish --provider='Barryvdh\Elfinder\ElfinderServiceProvider' --tag=views
+    php artisan vendor:publish --provider='Skyline\Elfinder\ElfinderServiceProvider' --tag=views
 
 ### Using Filesystem disks
 
@@ -196,7 +193,7 @@ Add support for a popup window, we have used [Jacklmoore's jQuery colorbox](http
 
 You can add the popup with the following action:
 
-    'Barryvdh\Elfinder\ElfinderController@showPopup'
+    'Skyline\Elfinder\ElfinderController@showPopup'
 
 #### Add the required resources
 
