@@ -1,14 +1,11 @@
 ## elFinder Package for Laravel 5
 
-### For Laravel 4, please use the [0.2 branch](https://github.com/barryvdh/laravel-elfinder/tree/0.2)!
-
 [![Packagist License](https://poser.pugx.org/skylinegtrs/laravel-elfinder/license.png)](http://choosealicense.com/licenses/mit/)
 [![Latest Stable Version](https://poser.pugx.org/skylinegtrs/laravel-elfinder/version.png)](https://packagist.org/packages/skylinegtrs/laravel-elfinder)
 [![Total Downloads](https://poser.pugx.org/Laravel-Elfinder-Remastered/laravel-elfinder/d/total.png)](https://packagist.org/packages/Laravel-Elfinder-Remastered/laravel-elfinder)
 
 This packages integrates [elFinder 2.1](https://github.com/Studio-42/elFinder/tree/2.1), 
 by making the php files available with Composer (+autoloading) and the assets with a publish command. It also provides some example views for standalone, tinymce and ckeditor.
-Files are updated from the a seperate [build repository](https://github.com/barryvdh/elfinder-builds)
 
 > Note: Use `php artisan elfinder:publish` instead of the old publish command, for future changes!
 
