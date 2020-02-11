@@ -50,10 +50,10 @@ class ElfinderController extends Controller
             ->with($this->getViewVars());
     }
 
-    public function showPopup($input_id,$max_files,$route)
+    public function showPopup($input_id = NULL ,$max_files = NULL ,$route = NULL)
     {
-        $type = unserialize(config('constants.IMG_TYPES'));
-        $imgs = unserialize(config('constants.IMG'));
+        $type = ['image/png', 'image/jpg', 'image/jpeg', 'image/gif'];
+        $imgs = ['png', 'jpg', 'jpeg'];
         return $this->app['view']
             ->make($this->package . '::standalonepopup')
             ->with($this->getViewVars())
