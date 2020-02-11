@@ -1,5 +1,5 @@
 {
-    "name": "skyline/laravel-elfinder",
+    "name": "skylinegtrs/laravel-elfinder",
     "keywords": ["laravel", "elfinder", "tinymce", "filebrowser"],
     "description": "A Laravel Package to integrate elFinder 2",
     "license": "MIT",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Skyline\\Elfinder\\": "src/"
+            "SkylineGTRS\\Elfinder\\": "src/"
         }
     },
     "extra": {
@@ -28,7 +28,7 @@
         },
         "laravel": {
             "providers": [
-                "Skyline\\Elfinder\\ElfinderServiceProvider"
+                "SkylineGTRS\\Elfinder\\ElfinderServiceProvider"
             ]
         }
     },

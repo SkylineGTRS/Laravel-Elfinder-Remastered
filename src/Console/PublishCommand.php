@@ -1,5 +1,5 @@
 <?php
-namespace Skyline\Elfinder\Console;
+namespace SkylineGTRS\Elfinder\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -53,7 +53,7 @@ class PublishCommand extends Command {
     public function handle()
     {
 
-        $package = 'skyline/elfinder-remastered';
+        $package = 'skylinegtrs/elfinder-remastered';
         $destination = $this->publishPath . "/packages/{$package}";
 
         if ( ! is_null($path = $this->getElfinderPath())) {

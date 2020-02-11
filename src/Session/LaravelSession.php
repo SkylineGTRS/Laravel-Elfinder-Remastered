@@ -1,4 +1,4 @@
-<?php namespace Skyline\Elfinder\Session;
+<?php namespace SkylineGTRS\Elfinder\Session;
 
 use elFinderSessionInterface;
 use Illuminate\Session\Store;

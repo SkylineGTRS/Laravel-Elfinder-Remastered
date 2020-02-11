@@ -1,4 +1,4 @@
-<?php namespace Skyline\Elfinder;
+<?php namespace SkylineGTRS\Elfinder;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;

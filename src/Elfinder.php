@@ -1,4 +1,4 @@
-<?php namespace Skyline\Elfinder;
+<?php namespace SkylineGTRS\Elfinder;
 
 class Elfinder{
     public static function checkAccess($attr, $path, $data, $volume) {

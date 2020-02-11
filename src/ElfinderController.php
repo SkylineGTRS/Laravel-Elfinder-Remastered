@@ -1,6 +1,6 @@
-<?php namespace Skyline\Elfinder;
+<?php namespace SkylineGTRS\Elfinder;
 
-use Skyline\Elfinder\Session\LaravelSession;
+use SkylineGTRS\Elfinder\Session\LaravelSession;
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Foundation\Application;
 use Illuminate\Routing\Controller;
@@ -125,7 +125,7 @@ class ElfinderController extends Controller
 
     protected function getViewVars()
     {
-        $dir = 'packages/skyline/' . $this->package;
+        $dir = 'packages/skylinegtrs/' . $this->package;
         $locale = str_replace("-",  "_", $this->app->config->get('app.locale'));
         if (!file_exists($this->app['path.public'] . "/$dir/js/i18n/elfinder.$locale.js")) {
             $locale = false;

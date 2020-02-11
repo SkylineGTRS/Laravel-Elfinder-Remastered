@@ -1,4 +1,4 @@
-<?php namespace Skyline\Elfinder;
+<?php namespace SkylineGTRS\Elfinder;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
@@ -46,11 +46,11 @@ class ElfinderServiceProvider extends ServiceProvider {
         ], 'views');
 
         if (!defined('ELFINDER_IMG_PARENT_URL')) {
-			define('ELFINDER_IMG_PARENT_URL', $this->app['url']->asset('packages/skyline/elfinder'));
+			define('ELFINDER_IMG_PARENT_URL', $this->app['url']->asset('packages/skylinegtrs/elfinder'));
 		}
 
         $config = $this->app['config']->get('elfinder.route', []);
-        $config['namespace'] = 'Skyline\Elfinder';
+        $config['namespace'] = 'SkylineGTRS\Elfinder';
 
         $router->group($config, function($router)
         {

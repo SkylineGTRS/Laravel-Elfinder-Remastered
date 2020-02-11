@@ -52,7 +52,7 @@ return array(
     |
     */
 
-    'access' => 'Skyline\Elfinder\Elfinder::checkAccess',
+    'access' => 'SkylineGTRS\Elfinder\Elfinder::checkAccess',
 
     /*
     |--------------------------------------------------------------------------
