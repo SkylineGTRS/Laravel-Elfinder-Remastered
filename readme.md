@@ -16,12 +16,12 @@ Files are updated from the a seperate [build repository](https://github.com/barr
 
 Require this package with Composer
     
-    composer require barryvdh/laravel-elfinder
+    composer require skylinegtrs/laravel-elfinder
     
 Add the ServiceProvider to the providers array in app/config/app.php
 
 ```php
-Barryvdh\Elfinder\ElfinderServiceProvider::class
+Skyline\Elfinder\ElfinderServiceProvider::class
 ```
 
 You need to copy the assets to the public folder, using the following artisan command:
@@ -37,7 +37,7 @@ You can change the prefix or filter/middleware for the routes. If you want full 
 
 The default configuration requires a directory called 'files' in the public folder. You can change this by publishing the config file.
 
-    php artisan vendor:publish --provider='Barryvdh\Elfinder\ElfinderServiceProvider' --tag=config
+    php artisan vendor:publish --provider='Skyline\Elfinder\ElfinderServiceProvider' --tag=config
 
 In your config/elfinder.php, you can change the default folder, the access callback or define your own roots.
 
@@ -45,7 +45,7 @@ In your config/elfinder.php, you can change the default folder, the access callb
 
 You can override the default views by copying the resources/views folder. You can also do that with the `vendor:publish` command:
 
-    php artisan vendor:publish --provider='Barryvdh\Elfinder\ElfinderServiceProvider' --tag=views
+    php artisan vendor:publish --provider='Skyline\Elfinder\ElfinderServiceProvider' --tag=views
 
 ### Using Filesystem disks
 
@@ -196,7 +196,7 @@ Add support for a popup window, we have used [Jacklmoore's jQuery colorbox](http
 
 You can add the popup with the following action:
 
-    'Barryvdh\Elfinder\ElfinderController@showPopup'
+    'Skyline\Elfinder\ElfinderController@showPopup'
 
 #### Add the required resources
 
