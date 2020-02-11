@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\Elfinder;
+<?php namespace Skyline\Elfinder;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
@@ -46,11 +46,11 @@ class ElfinderServiceProvider extends ServiceProvider {
         ], 'views');
 
         if (!defined('ELFINDER_IMG_PARENT_URL')) {
-			define('ELFINDER_IMG_PARENT_URL', $this->app['url']->asset('packages/barryvdh/elfinder'));
+			define('ELFINDER_IMG_PARENT_URL', $this->app['url']->asset('packages/skyline/elfinder'));
 		}
 
         $config = $this->app['config']->get('elfinder.route', []);
-        $config['namespace'] = 'Barryvdh\Elfinder';
+        $config['namespace'] = 'Skyline\Elfinder';
 
         $router->group($config, function($router)
         {

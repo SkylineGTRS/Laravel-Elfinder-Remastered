@@ -1,5 +1,5 @@
 <?php
-namespace Barryvdh\Elfinder\Console;
+namespace Skyline\Elfinder\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -8,6 +8,7 @@ use Illuminate\Filesystem\Filesystem;
  * Publish the elFinder assets to the public directory
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
+ * @editor Irakli Metivishvili <irakli.skyline@gmail.com> for personal use.
  */
 class PublishCommand extends Command {
 
@@ -52,7 +53,7 @@ class PublishCommand extends Command {
     public function handle()
     {
 
-        $package = 'barryvdh/elfinder';
+        $package = 'skyline/elfinder-remastered';
         $destination = $this->publishPath . "/packages/{$package}";
 
         if ( ! is_null($path = $this->getElfinderPath())) {

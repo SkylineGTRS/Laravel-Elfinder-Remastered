@@ -1,12 +1,12 @@
 {
-    "name": "barryvdh/laravel-elfinder",
+    "name": "skyline/laravel-elfinder",
     "keywords": ["laravel", "elfinder", "tinymce", "filebrowser"],
     "description": "A Laravel Package to integrate elFinder 2",
     "license": "MIT",
     "authors": [
         {
-            "name": "Barry vd. Heuvel",
-            "email": "barryvdh@gmail.com"
+            "name": "Irakli Metivishvili",
+            "email": "irakli.skyline@gmail.com"
         }
     ],
     "require": {
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Barryvdh\\Elfinder\\": "src/"
+            "Skyline\\Elfinder\\": "src/"
         }
     },
     "extra": {
@@ -28,7 +28,7 @@
         },
         "laravel": {
             "providers": [
-                "Barryvdh\\Elfinder\\ElfinderServiceProvider"
+                "Skyline\\Elfinder\\ElfinderServiceProvider"
             ]
         }
     },

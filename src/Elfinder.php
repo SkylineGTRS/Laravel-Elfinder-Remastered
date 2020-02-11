@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\Elfinder;
+<?php namespace Skyline\Elfinder;
 
 class Elfinder{
     public static function checkAccess($attr, $path, $data, $volume) {
